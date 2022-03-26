@@ -3,15 +3,20 @@
 
 from math import sqrt
 
-total = 1
-for x in range(1,2000001,2):
+primes = [2]
+
+total = 0
+for x in range(3,2000000,2):
     isPrime = True
-    if(x%2 != 0):
-        print("testing: " + str(x))
-        for y in range(3,int(sqrt(x)),2):
-            if(x%y == 0):
-                isPrime = False
-                break
-        if(isPrime):
-            total += x
+    
+    for y in primes:
+        if(y >= sqrt(x)+1):
+            break
+        if(x%y == 0):
+            isPrime = False
+            break
+    if(isPrime):
+        primes.append(x)
+for prime in primes:
+    total += prime
 print(total)
