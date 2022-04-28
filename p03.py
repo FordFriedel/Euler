@@ -1,5 +1,8 @@
+#What is the largest prime factor of the number 600851475143?
+
 #solved
 #2/27/22
+#solution: 6857
 
 # take num
 # while solved == false

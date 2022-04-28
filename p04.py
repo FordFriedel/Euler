@@ -1,5 +1,8 @@
+#Find the largest palindrome made from the product of two 3-digit numbers.
+
 #solved
 #2/28/22
+#solution: 906609
 
 #goal is to find the largest palindrome number from the product of two 3 digit numbers
 #999 * 999 is 6 digits

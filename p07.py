@@ -1,5 +1,6 @@
-#unsolved
+#solved
 #4/22/22
+#solution: 104743
 
 from math import sqrt
 
@@ -18,5 +19,3 @@ while len(primes) < 10001:
         primes.append(x)
     x += 1
 print(primes[-1])
-
-#104743
