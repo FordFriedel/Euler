@@ -8,13 +8,17 @@
 first = 1
 second = 1
 
-def two(older, old, sum):
-
-    if(old >= 4000000):
+def fibonacci_iterate(older: int, old: int, sum: int, max: int):
+    "find the sum of the even valued term of a fibonacci sequence"
+    if(old >= max):
         return sum
     new = older + old
     if((new%2) == 0):
         sum += new
-    return two(old, new, sum)
+    return fibonacci_iterate(old, new, sum, max)
 
-print(two(first,second,0))
+def fibonacci_even_sum(max: int):
+    "find the sum of the even valued term of a fibonacci sequence"
+    return fibonacci_iterate(1,1,0,max)
+
+print(fibonacci_even_sum(4000000))

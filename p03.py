@@ -11,15 +11,13 @@
 # test if num / x is prime
 # if it is solved = true
 
-from math import sqrt
-
-
-def primeFactor(num):
+def large_prime_factor(num):
     # for every number between 2 and the number we are looking to find the largest prime number in
     for x in range(2,num):
 
         #enter if the test case finds a whole number
         if num%x == 0: 
+            print("testing : " + str(x))
             testNum = num/x
             isPrime = True
 
@@ -35,4 +33,5 @@ def primeFactor(num):
             if(isPrime):
                 return testNum
 
-print(int(primeFactor(600851475143)))
+if __name__ == "__main__":
+    print(int(large_prime_factor(600851475143)))
