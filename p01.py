@@ -4,7 +4,7 @@
 #2/25/22
 #solution: 233168
 
-def one(x):
+def one(x): #so specific not even worth making into a reusable function
     ptr = 0
     total = 0
     while ptr < x:

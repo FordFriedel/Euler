@@ -9,7 +9,8 @@
 #I think I find palindromes and then look for their products
 #start high and go back downwards
 
-def four():
+def six_digit_palindrome():
+    "find the largest palindrome number from the product of two 3 digit numbers"
     largest = 0
     i = 9
     j = 9
@@ -38,8 +39,10 @@ def four():
                                 print(x)
                                 largest = num
     return largest
-                        
-print(four())
-#print(four())
+
+if __name__ == "__main__":       
+    solution = six_digit_palindrome()
+    print("solution: " + solution)
+
 
 

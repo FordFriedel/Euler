@@ -21,4 +21,7 @@ def fibonacci_even_sum(max: int):
     "find the sum of the even valued term of a fibonacci sequence"
     return fibonacci_iterate(1,1,0,max)
 
-print(fibonacci_even_sum(4000000))
+if __name__ == "__main__":
+    solution = fibonacci_even_sum(4000000)
+    print("solution: " + str(solution))
+

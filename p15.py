@@ -26,4 +26,3 @@ if __name__ == "__main__":
     print(lattice_square(3))
     print(lattice_square(4))
     print(lattice_square(20))
-

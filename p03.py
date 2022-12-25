@@ -12,12 +12,11 @@
 # if it is solved = true
 
 def large_prime_factor(num):
-    # for every number between 2 and the number we are looking to find the largest prime number in
+    "for every number between 2 and the number we are looking to find the largest prime factor"
     for x in range(2,num):
 
         #enter if the test case finds a whole number
         if num%x == 0: 
-            print("testing : " + str(x))
             testNum = num/x
             isPrime = True
 
@@ -34,4 +33,5 @@ def large_prime_factor(num):
                 return testNum
 
 if __name__ == "__main__":
-    print(int(large_prime_factor(600851475143)))
+    solution = large_prime_factor(600851475143)
+    print("solution: " + str(solution))
